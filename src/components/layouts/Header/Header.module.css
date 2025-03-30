@@ -1,0 +1,28 @@
+.NavigationMenu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 1rem;
+}
+
+.menuLink {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
+.contentMenuLink {
+  cursor: pointer;
+}
+
+.menuLink:hover {
+  background-color: transparent;
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #eee;
+}
