@@ -2,11 +2,11 @@ import Style from "./About.module.css";
 
 export default function About() {
   return (
-    <div className={Style.Container}>
+    <div className={Style.Container} id="about">
       <div className={Style.ImgContainer}>
         <img
           className={Style.Img}
-          src="/coffee-cups.png"
+          src="/coffee-making-idk.webp"
           alt="Coffee cups at Bean Beverage"
         />
       </div>

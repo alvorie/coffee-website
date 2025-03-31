@@ -6,7 +6,7 @@ import styles from "./Footer.module.css";
 
 export function Footer() {
   return (
-    <footer className={styles.container}>
+    <footer className={styles.container} id="contacts">
       <div className={styles.wrapper}>
         <div className={styles.divider} />
 

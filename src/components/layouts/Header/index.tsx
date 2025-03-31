@@ -5,7 +5,7 @@ import {
   NavigationMenuLink,
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
-import { cn } from "@/lib/utils";
+import { HashLink } from "react-router-hash-link";
 import Style from "./Header.module.css";
 import { NavLink } from "react-router-dom";
 
@@ -29,12 +29,12 @@ export default function Header() {
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink className={Style.contentMenuLink}>
-            contacts
+            <a href="#contacts">contacts</a>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink className={Style.contentMenuLink}>
-            about
+            <HashLink to={"/#about"}>about</HashLink>
           </NavigationMenuLink>
         </NavigationMenuItem>
       </NavigationMenu>

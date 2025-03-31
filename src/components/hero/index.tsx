@@ -1,8 +1,15 @@
-import { motion } from "framer-motion";
+import { motion, transform } from "framer-motion";
 import Style from "./Hero.module.css";
 import { NavLink } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const [isInitialized, setIsInitialized] = useState<boolean>(false);
+
+  useEffect(() => {
+    setIsInitialized(true);
+  }, []);
+
   return (
     <div>
       <div className={Style.heroContainer}>
@@ -18,8 +25,8 @@ export default function Hero() {
 
         <motion.div
           className={Style.textContainer}
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, transform: "scale(0.7)" }}
+          animate={{ opacity: 1, transform: "scale(1)" }}
           transition={{ duration: 0.5 }}
         >
           <i>
