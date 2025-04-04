@@ -15,6 +15,15 @@ export function Footer() {
             <h3 className={styles.heading}>Bean Beverage</h3>
             <p className={styles.paragraph}>
               Community-driven coffee experiences and workshops for enthusiasts.
+              Made up by{" "}
+              <a
+                target="_blank"
+                style={{ color: "chocolate" }}
+                href="https://github.com/alvorie"
+              >
+                alvorie
+              </a>{" "}
+              for practice :)
             </p>
             <div className={styles.socialGroup}>
               <Button variant="ghost" size="icon">

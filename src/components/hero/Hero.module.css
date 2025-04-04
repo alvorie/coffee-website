@@ -37,7 +37,7 @@
 }
 
 .Link:hover {
-  color: rgb(244, 206, 82);
+  color: var(--primary-hover);
   transform: scale(1.01);
 }
 

@@ -14,6 +14,7 @@
   --primary-foreground: #fafafa;
   --border: #e5e5e5;
   --radius: 0.5rem;
+  --primary-hover: rgb(244, 206, 82);
 }
 
 /* Base element styles */

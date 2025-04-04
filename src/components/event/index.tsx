@@ -2,19 +2,10 @@ import { motion } from "framer-motion";
 import { Button } from "../ui/button";
 import Style from "./event.module.css";
 import { FaCalendarAlt, FaMapMarkerAlt, FaCoffee } from "react-icons/fa";
+import { Link } from "react-router";
+import { Meeting } from "@/types";
 
-interface Props {
-  data: {
-    name: string;
-    date: Date;
-    cost: number;
-    description: string;
-    place: string;
-    img: string;
-  };
-}
-
-export default function CoffeeEvent({ data }: Props) {
+export default function CoffeeEvent({ ...data }: Meeting) {
   return (
     <motion.div
       initial={{ opacity: 0.5, scale: 0.95 }}
@@ -61,7 +52,9 @@ export default function CoffeeEvent({ data }: Props) {
 
         <p className={Style.Description}>{data.description}</p>
 
-        <Button className={Style.Button}>See details</Button>
+        <Link to={`/meeting/${data.id}`}>
+          <Button className={Style.Button}>See details</Button>
+        </Link>
       </div>
     </motion.div>
   );

@@ -25,3 +25,12 @@
   border-radius: 16px;
   object-fit: cover;
 }
+
+.FaHeart {
+  color: #333;
+  display: inline;
+  position: relative;
+  bottom: 1px;
+  left: 6px;
+  width: 10px;
+}

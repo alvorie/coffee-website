@@ -23,13 +23,13 @@ export default function Header() {
               <NavLink to={"/upcoming-meetings"}>upcoming</NavLink>
             </NavigationMenuLink>
             <NavigationMenuLink className={Style.contentMenuLink}>
-              archive
+              <NavLink to={"/archived-meetings"}>archive</NavLink>
             </NavigationMenuLink>
           </NavigationMenuContent>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <NavigationMenuLink className={Style.contentMenuLink}>
-            <a href="#contacts">contacts</a>
+            <HashLink to={"/#contacts"}>contacts</HashLink>
           </NavigationMenuLink>
         </NavigationMenuItem>
         <NavigationMenuItem>

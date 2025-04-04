@@ -1,8 +1,8 @@
 .Events {
   display: flex;
   gap: 30px;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .Content {
@@ -16,4 +16,15 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
+}
+
+.NotFound {
+  text-align: center;
+  padding: 4rem 0;
+}
+
+@media (max-width: 1000px) {
+  .Events {
+    justify-content: center;
+  }
 }

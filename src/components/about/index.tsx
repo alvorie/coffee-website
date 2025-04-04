@@ -1,4 +1,5 @@
 import Style from "./About.module.css";
+import { FaHeart } from "react-icons/fa";
 
 export default function About() {
   return (
@@ -13,7 +14,7 @@ export default function About() {
       <div className={Style.Text}>
         <h2>about bean beverage</h2>
         <p>
-          Bean Beverage is a community-driven coffee experience where
+          Bean Beverage is a <i>community-driven</i> coffee experience where
           enthusiasts gather to explore bold flavors, swap brewing secrets, and
           connect over expertly crafted cups.
         </p>
