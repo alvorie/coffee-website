@@ -8,7 +8,6 @@ import {
   FaUsers,
   FaClock,
   FaUser,
-  FaListAlt,
 } from "react-icons/fa";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";

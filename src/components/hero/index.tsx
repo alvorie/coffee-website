@@ -1,15 +1,8 @@
-import { motion, transform } from "framer-motion";
+import { motion } from "framer-motion";
 import Style from "./Hero.module.css";
 import { NavLink } from "react-router-dom";
-import { useEffect, useState } from "react";
 
 export default function Hero() {
-  const [isInitialized, setIsInitialized] = useState<boolean>(false);
-
-  useEffect(() => {
-    setIsInitialized(true);
-  }, []);
-
   return (
     <div>
       <div className={Style.heroContainer}>
