@@ -13,7 +13,7 @@
 }
 
 .bgContainer {
-  background-image: url("../../public/yellow-coffee.png");
+  background-image: url("/yellow-coffee.png");
   background-repeat: no-repeat;
   background-position: right bottom;
   background-size: auto 100%;
