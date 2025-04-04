@@ -1,5 +1,4 @@
 import Style from "./About.module.css";
-import { FaHeart } from "react-icons/fa";
 
 export default function About() {
   return (
